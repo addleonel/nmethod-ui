@@ -1,0 +1,45 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../_linkers/newtonraphson-js-python.js"></script>
+    <title>Newton-Raphson Method</title>
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+        
+    <div class="container">
+            
+            <div class="jumbotron">
+                    <a href="index.html" class="comeindex"><img src="../_images/previous.png" alt="back" width="50px"></a>
+                    <h2>Newton-Raphson</h2>
+                    <div>
+                        <h2>$$x_{n+1} = x_{n} - \frac{f(x_n)}{f^{'}(x_n)}$$</h2>
+                        <img src="../_images/newtons-method.png" alt=""><br>
+                        <a href="https://brilliant.org/wiki/newton-raphson-method/">For more information visit here</a>
+                    </div>
+            </div>
+            <div class="formulary">  
+                <p>\(f(x)=\) <input class="input-value" type="text" id="thefunction" placeholder="Escribe la función"></p>
+                <p>punto en el eje \(x =\) <input class="input-value" input type="text" id="termo" placeholder="Número cercano a una raiz de la función">
+                    
+                    <button class="btn btn-info" onclick="getSoma()">RUN</button>    
+                </p>
+                         
+                
+
+                <div class="jumbotron">
+                        <textarea name="result" id="are" cols="30" rows="10" class="text-area" >
+                        </textarea>
+                </div>
+
+            </div>
+
+    </div>
+</body>

@@ -1,0 +1,48 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../_linkers/secante-js-python.js"></script>
+    <title>Secant Method</title>
+      <!-- mathjax -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+        
+    <div class="container">
+            
+            <div class="jumbotron">
+                    <a href="index.html" class="comeindex"><img src="../_images/previous.png" alt="back" width="50px"></a>
+                    <h2>Método de la Secante</h2>
+                    <div>
+                        $$x_{n+1}=x_n-\frac{x_n-x_{n-1}}{f(x_n)-f(x_{n-1})}f(x_n)$$
+                        <img src="../_images/Secant_method.png" alt=""><br>
+                        <a href="https://en.wikipedia.org/wiki/Secant_method">For more information visit here</a>
+                    </div>
+            </div>
+            <div class="formulary">
+
+                <p>\(f(x)=\) <input class="input-value" type="text" id="thefunction" placeholder="Escribe la función"></p>
+                <p>Para calcular \(x_{n+1}\) necesitamos dos valores \(x_{n-1}\) y \(x_{n}\)</p>
+                <p>El valor de \(x_{n-1}=\) <input class="input-value" input type="number" id="valor_a" placeholder="El primer valor">
+                <p>El valor de \(x_{n}=\) <input class="input-value" input type="number" id="valor_b" placeholder="El segundo valor">
+                
+                    <button class="btn btn-info" onclick="get_secante()">RUN</button>    
+                </p>
+                         
+                
+
+                <div class="jumbotron">
+                        <textarea name="result" id="are" cols="30" rows="10" class="text-area" >
+                        </textarea>
+                </div>
+
+            </div>
+
+    </div>
+</body>

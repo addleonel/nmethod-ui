@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Métodos Numéricos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <!-- mathjax -->
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h2>Aquí hay cuatro métodos númericos</h2>
+          <p>Seleciona uno y continua</p>
+          <div>
+              $$
+              
+              a_n \le r_n \le b_n
+              $$
+              $$
+              r_n = \frac{a_n+b_n}{2}, a_{n+1}= \begin{cases}
+                                                a_n & \text{si $f(a_n).f(r_n) \lt 0$}\\
+                                                r_n & \text{si $f(a_n).f(r_n) \gt 0$}
+                                                \end{cases},
+                                       b_{n+1}= \begin{cases}
+                                                b_n & \text{si $f(b_n).f(r_n) \lt 0$}\\
+                                                r_n & \text{si $f(b_n).f(r_n) \gt 0$}
+                                                \end{cases}
+              
+              $$
+            $$x_{n+1} = x_{n} - \frac{f(x_n)}{f^{'}(x_n)}$$
+            $$x_{n+1}=x_n-\frac{x_n-x_{n-1}}{f(x_n)-f(x_{n-1})}f(x_n)$$
+            $$c_k = b_k-\frac{f(b_k)\left(b_k-a_k\right)}{f(b_k)-f(a_k)}$$
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-3">
+            <br>
+            <button class="btn-method"><a  href="biseccion.html">Método de la Bisección</a></button>
+          </div>
+          <div class="col-xs-3">
+            <br>
+            <button class="btn-method"><a  href="newton-raphson.html">Método de Newton-Raphson</a></button>
+          </div>
+          <div class="col-xs-3">
+            <br>
+            <button class="btn-method"><a  href="secante.html">Método de la Secante <br></a></button>
+          </div>
+          <div class="col-xs-3">
+            <br>
+            <button class="btn-method"><a  href="falsa-posicion.html">Método de la falsa posición</a></button>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
