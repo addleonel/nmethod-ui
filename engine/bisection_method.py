@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 
 # x_a and x_b are intervals
-def bisection_METHOD(x_a, x_b):
+def bisection_method(x_a, x_b):
     i = 0
     x_r_before = 0
     list_SENTENCE = []
@@ -52,6 +52,6 @@ def graphicoffunction():
 # valor_a = float(sys.argv[1])
 # valor_b = float(sys.argv[2])
 
-# bisection_METHOD(valor_a,valor_b)
-# bisection_METHOD(0 , 1.4)
+# bisection_method(valor_a,valor_b)
+# bisection_method(0 , 1.4)
 graphicoffunction()

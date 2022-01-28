@@ -10,14 +10,14 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 900,
     height: 700,
-    icon: __dirname + '/_images/python-icon.ico',
+    icon: __dirname + '/images/python-icon.ico',
     webPreferences: {
       nodeIntegration: true
     }
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('_views/index.html')
+  mainWindow.loadFile('views/index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

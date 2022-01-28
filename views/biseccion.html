@@ -1,0 +1,48 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../linkers/bisection-js-python.js"></script>
+    <title>Bisection Method</title>
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <a href="index.html" class="comeindex"><img src="../images/previous.png" alt="back" width="50px"></a>
+            <h2>Método de la Biseccion</h2>
+            <div>   
+                    $$a_n\le r_n \le b_n$$
+                    $$r_n = \frac{a_n+b_n}{2}, a_{n+1}= \begin{cases}
+                        a_n & \text{si $f(a_n).f(r_n) \lt 0$}\\
+                        r_n & \text{si $f(a_n).f(r_n) \gt 0$}
+                        \end{cases},
+                        b_{n+1}= \begin{cases}
+                        b_n & \text{si $f(b_n).f(r_n) \lt 0$}\\
+                        r_n & \text{si $f(b_n).f(r_n) \gt 0$}
+                        \end{cases}
+                    $$
+                <img src="../images/bisection-method.PNG" alt=""><br>
+                <a href="https://es.wikipedia.org/wiki/Método_de_bisección">For more information visit here</a>
+            </div>              
+        </div>
+        <div class="formulary">
+            <p>\(f(x) =\)<input class="input-value" type="text" id="thefunction" placeholder="Escribe la función"></p>
+            <p>Para calcular \(r_n\) necesitamos un intervalo inicial \([a_1,b_1]\)</p>
+            <p>El valor de \(a_1=\) <input class="input-value" input type="text" id="value_a" placeholder="El valor de a">
+            <p>El valor de \(b_1=\) <input class="input-value" input type="text" id="value_b" placeholder="El valor de b">
+                <button class="btn btn-info" onclick="getBisectionMethod()">RUN</button>    
+            </p>
+            <div class="jumbotron">
+                <textarea name="result" id="are" cols="30" rows="10" class="text-area" >
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
