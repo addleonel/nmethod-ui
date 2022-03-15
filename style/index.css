@@ -45,8 +45,10 @@
 }
 
 .text-area{
-    display:inline-block;
+    width: 100%;
     color: #000;
+    padding: 7px;
+    font-size: 20px;
 }
 
 .input-value{

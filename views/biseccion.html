@@ -35,12 +35,13 @@
         <div class="formulary">
             <p>\(f(x) =\)<input class="input-value" type="text" id="thefunction" placeholder="Escribe la función"></p>
             <p>Para calcular \(r_n\) necesitamos un intervalo inicial \([a_1,b_1]\)</p>
-            <p>El valor de \(a_1=\) <input class="input-value" input type="text" id="value_a" placeholder="El valor de a">
-            <p>El valor de \(b_1=\) <input class="input-value" input type="text" id="value_b" placeholder="El valor de b">
-                <button class="btn btn-info" onclick="getBisectionMethod()">RUN</button>    
-            </p>
+            <p>El valor de \(a_1=\) <input class="input-value" input type="text" id="value_a" placeholder="El valor de a"></p>
+            <p>El valor de \(b_1=\) <input class="input-value" input type="text" id="value_b" placeholder="El valor de b"></p>
+                
+            <p>Número de iteraciones: <input class="input-value" input type="text" id="iterator" placeholder="Por defecto itera hasta que el error sea cero"></p>
+            <button class="btn btn-info" onclick="getBisectionMethod()">RUN</button>    
             <div class="jumbotron">
-                <textarea name="result" id="are" cols="30" rows="10" class="text-area" >
+                <textarea name="result" id="are" cols="50" rows="10" class="text-area" >
                 </textarea>
             </div>
         </div>
