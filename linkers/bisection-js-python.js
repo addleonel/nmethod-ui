@@ -15,6 +15,6 @@ function getBisectionMethod(){
 
     var bisectionMethod = new PythonShell('bisection_method.py', options)
     bisectionMethod.on("message", function(message){
-        document.getElementById("are").innerHTML = message;
+        swal("La iteración ",message);
     })
 }
