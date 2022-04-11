@@ -21,6 +21,7 @@
     "electron": "^4.2.10"
   },
   "dependencies": {
+    "mathjs": "^10.4.3",
     "python-shell": "^1.0.8"
   }
 }

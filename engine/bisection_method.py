@@ -1,5 +1,6 @@
 import math
 import sys
+import sympy
 
 symbols = {
     'sin': math.sin,

@@ -3,6 +3,7 @@
 # import modules
 import math
 import sys
+import sympy
 
 
 def runMethod(x_i):
